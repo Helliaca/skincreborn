@@ -1,0 +1,16 @@
+#name
+Elanus19
+#skin
+DEMENTOR
+#firststart
+0
+#level
+NEWB
+#health
+300
+#speed
+10000
+#firepower
+20
+#lvluppoints
+0

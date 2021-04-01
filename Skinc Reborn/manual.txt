@@ -1,0 +1,111 @@
+Skinc: Reborn - Manual
+
+Common technical difficulties:
+
+- My game doesn't start/work at all.
+If your game doesnt launch properly at all there might be several reasons for that:
+If you are getting an error message when launching it there is probably some kind of 
+resource missing. Check if the game was isntalled properly and if all resource-files and
+folders are in the same folder as the exe-file. It is also possible that one of the dlls is 
+missing. There should be a whole bunch of sfml-dlls (including window audio and graphics), as
+well as msvcr/msvcp dlls and probably libsndfile/openal32.
+If all the files are in place properly, you might want to try to install Visual C++.
+Vicual C++ 2010 x86 Redistributable is recommended, although some older versions should do aswell.
+If nothing helps it probably is a compatibility issue. the program might not work on your specific
+operating system.
+
+
+- My game bugs out weirdly.
+If something really weird happens, in all likelyhood that is because I coded it poorly. And unless
+you want to look through the messy source-code and find the error yourself, im afraid there is no
+solution to this problem.
+Another very likely reason however, is a low-framerate. The black console that opens whens tarting the game
+should show a message of "LOW FPS" each time you get a low fps-spike. This can usually lead to the player or
+his enemy teleporting into the terrain or other werid stuff. This game works with SMFL 2.1 graphics libaries
+and these are not actually made for destructible terrain games. As a result the destructible terrain
+eats 90% of the framerate. Before implementing the destrucible terrain the game was running on over 1000k fps.
+After implmenting the terrain it droppend to 40fps. If you look in your isntallation folder, there should be
+a ndt-version of the main executable. This is the same game, just without destructible terrain. This version might be
+buggy and unbalanced, but it should fix the fps-issue.
+
+
+Quick Skinc: Reborn Gameplay-guide:
+
+A usually effective strategy (especially once you have "Fly" as one of your spells) is to just kepp reacharging and dodging
+the enemy ray continuously. And if you need to pass through that ray shortly, it is clever to defend for that short time.
+Even though nukes can be extremly handy to free yourself once you get stuck in the terrain, they also do a lot of damage,
+so if the enemy is just standing on the ground and you can get an easy hit on them, it most likely is worth the shot.
+All AI's actually work in a extremly similar way. It is usually just the aim, reactiontime and aim-adjustment that differenciates them.
+It is important to know that, unlike you, the AI can interrupt their attacks to defend.
+Now you might find yourself in a situation where the enemy is on low-health and he just keeps defending your attacks. Now the elegant
+way of solving this is to just let the bot run out of mana and kill him then. But there is also a very dirty trick to avoid this: 
+The AI is constantly calcucating the danger that he is currently in. This danger-variable depends onthree factors: 
+whether if you are actually attacking at all, how much percent-health he has left (if he is low hp he is more likely to defend) and
+the distance between your mouse cursor and himself. Yes you heard that right, the AI doesnt actually care how far your ray is from them,
+they only look at your mouse cursor. So if you can hit them while keeping your cursor far away from them, it is far less likely that they'll
+defend you attack.
+
+Now a few tips concernign the most unique AI of them all, the cheating-bot:
+Every time the AI changes his moving-direction there is a 1/20 chances he will start cheating.
+He will choose at random one out of 4 cheats, of which you only need to fear one:
+- Sudden heal: This cheat happens without any sound/graphic so it might go completly unnoticed. The AI will heal a very small amount of hp.
+- Teleport: The AI will instantly teleport to the player.
+- Cloak: The AI will turn invisible for a few seconds. Altough if he is attacking or taunting it should be easy to figure out where he is.
+- Super Saiyan: This is the one you need to fear. You will hear a weird posion-magic kind of sound and the AI-sprite will look odd. This will drain
+	100 mana and health from you and there is no way you can avoid it. This basically sets any match against a cheating bot on a time-limit, since
+	he will constantly be draining your hp. So key is to defeat him before he can cheat much.
+
+
+
+Quick Skinc: Reborn Cheating-guide:
+
+If you came to this section expecting instructions on how you may embrace the dark arts of cheating, turn invisible and do all that other fancy stuff
+the cheating-bots can, I am sorry to disappoint, you can't :(
+This section is much more to describe what you can do if you get stuck in the championship but still want to see the rest of the game or you want to
+experiment with ridiculously overpowered stats etc.
+Now there is a very simple way of changing the stats of a player-profile.
+- Go to the installation folder.
+- Go to the folder "saves"
+- All existing profiles should have a txt-file with their name.
+Simply open that file and you should get something like this:
+#name
+Elanus19
+#skin
+DEMENTOR
+#firststart
+0
+#level
+NEWB
+#health
+300
+#speed
+10000
+#firepower
+20
+#lvluppoints
+0
+Now the text after the hashtag pretty intuitively describes what the text after it does.
+Concerning stats you should only be interested in #health, #speed and #firepower.
+If you want to skip a level in the Championship you can change #level which can adopt following values: NEWB, BOGBEARD, LYNWOOD, FIRELORD, TERIDAX, BOT, LANCE, COMPLETE
+Now key is, that in between each #x and the value after it there is an invisible newline. You can see how your cursor stops suddenly if you navigate the line
+with your left and right arrows on your keyboard. Now try not to delte this, because if you do, the game wont be able to load your profile. It is completely irrelevant if the
+newline is invisble or visible though, so you can always insert it manually. You can also always rewrite the whole file like this:
+#name
+Elanus19
+#skin
+DEMENTOR
+#firststart
+0
+#level
+NEWB
+... (and so on)
+
+
+Quick Skinc: Reborn Customization-guide:
+
+Now there was supposed to be a custom-map/playersprite option here. But because of time-issues it couldn't be implemented.
+You can still load up custom made maps and playermodels by replacing original files:
+- If you want to replace a map-background replace a file in the mapbackgrounds-folder.
+- If you want to replace a map-hud-overlay replace a file in the resource/hudoverlay-folder (it is important that most of it is invisble.)
+- If you want to use a custom map, replace a file in the maps-folder. These should be 1280x924 and anythign that is air should be coloured fully purple rgb255,0,255 (as you can see in the samples).
+- If you want to create your own player-sprite, go check the playersprites folder there is a seperate readme-file there.

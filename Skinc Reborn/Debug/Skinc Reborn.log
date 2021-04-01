@@ -1,0 +1,60 @@
+﻿Compilación iniciada a las 08/01/2015 17:41:18.
+     1>Proyecto "C:\Users\Benjamin\Documents\Visual Studio 2010\Projects\Skinc Reborn\Skinc Reborn\Skinc Reborn.vcxproj" en el nodo 2 (build destinos).
+     1>InitializeBuildStatus:
+         Se creará "Debug\Skinc Reborn.unsuccessfulbuild" porque se especificó "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Se omitirá el destino "GenerateTargetFrameworkMonikerAttribute" porque todos los archivos de salida están actualizados respecto a los archivos de entrada.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Benjamin\Downloads\SFML-2.1-windows-vc10-32bits\SFML-2.1\include" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt chp_menu.cpp credits_menu.cpp custom_menu.cpp main.cpp main_menu_w.cpp profile_menu.cpp splashscreen_menu.cpp terrain.cpp /clr:nostdlib 
+         chp_menu.cpp
+         credits_menu.cpp
+         custom_menu.cpp
+         main.cpp
+         main_menu_w.cpp
+         profile_menu.cpp
+         splashscreen_menu.cpp
+         terrain.cpp
+     1>terrain.cpp(80): warning C4244: 'inicializando' : conversión de 'float' a 'int'; posible pérdida de datos
+     1>terrain.cpp(82): warning C4244: 'inicializando' : conversión de 'float' a 'int'; posible pérdida de datos
+     1>terrain.cpp(106): warning C4244: 'inicializando' : conversión de 'float' a 'int'; posible pérdida de datos
+     1>terrain.cpp(108): warning C4244: 'inicializando' : conversión de 'float' a 'int'; posible pérdida de datos
+         Generando código...
+         Todas las salidas están actualizadas.
+       CoreResGen:
+         "c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile chp_menu.resx,Debug\SkincReborn.chp_menu.resources credits_menu.resx,Debug\SkincReborn.credits_menu.resources custom_menu.resx,Debug\SkincReborn.custom_menu.resources main_menu_w.resx,Debug\SkincReborn.main_menu_w.resources profile_menu.resx,Debug\SkincReborn.profile_menu.resources splashscreen_menu.resx,Debug\SkincReborn.splashscreen_menu.resources
+         Procesando archivo de recursos "chp_menu.resx" en "Debug\SkincReborn.chp_menu.resources".
+         Procesando archivo de recursos "credits_menu.resx" en "Debug\SkincReborn.credits_menu.resources".
+         Procesando archivo de recursos "custom_menu.resx" en "Debug\SkincReborn.custom_menu.resources".
+         Procesando archivo de recursos "main_menu_w.resx" en "Debug\SkincReborn.main_menu_w.resources".
+         Procesando archivo de recursos "profile_menu.resx" en "Debug\SkincReborn.profile_menu.resources".
+         Procesando archivo de recursos "splashscreen_menu.resx" en "Debug\SkincReborn.splashscreen_menu.resources".
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Benjamin\Documents\Visual Studio 2010\Projects\Skinc Reborn\Debug\Skinc Reborn.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Benjamin\Downloads\SFML-2.1-windows-vc10-32bits\SFML-2.1\lib" "sfml-window-d.lib" "sfml-graphics-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" "sfml-network-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Debug\SkincReborn.chp_menu.resources /ASSEMBLYRESOURCE:Debug\SkincReborn.credits_menu.resources /ASSEMBLYRESOURCE:Debug\SkincReborn.custom_menu.resources /ASSEMBLYRESOURCE:Debug\SkincReborn.main_menu_w.resources /ASSEMBLYRESOURCE:Debug\SkincReborn.profile_menu.resources /ASSEMBLYRESOURCE:Debug\SkincReborn.splashscreen_menu.resources /MANIFEST /ManifestFile:"Debug\Skinc Reborn.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Benjamin\Documents\Visual Studio 2010\Projects\Skinc Reborn\Debug\Skinc Reborn.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\bot.obj
+         Debug\chp_menu.obj
+         Debug\credits_menu.obj
+         Debug\custom_menu.obj
+         Debug\Engine.obj
+         Debug\GameContainer.obj
+         Debug\hud.obj
+         Debug\main.obj
+         Debug\main_menu_w.obj
+         Debug\nuke.obj
+         Debug\player.obj
+         Debug\profile_menu.obj
+         Debug\soundManager.obj
+         Debug\splashscreen_menu.obj
+         Debug\terrain.obj
+         Debug\valueBar.obj
+         Debug\weapon.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         Skinc Reborn.vcxproj -> C:\Users\Benjamin\Documents\Visual Studio 2010\Projects\Skinc Reborn\Debug\Skinc Reborn.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Benjamin\Documents\Visual Studio 2010\Projects\Skinc Reborn\Debug\Skinc Reborn.exe;#1" /manifest "Debug\Skinc Reborn.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Se eliminará el archivo "Debug\Skinc Reborn.unsuccessfulbuild".
+         Aplicando tarea Touch a "Debug\Skinc Reborn.lastbuildstate".
+     1>Compilación del proyecto terminada "C:\Users\Benjamin\Documents\Visual Studio 2010\Projects\Skinc Reborn\Skinc Reborn\Skinc Reborn.vcxproj" (build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:18.12
